@@ -1,0 +1,40 @@
+body {
+  margin: 100;/*Elimina los margenes por defecto del navegador para que nuestro juego ocupe todo el espacio disponible */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom, #03d044, #000000);
+    font-family: 'Orbitron', monospace;
+  color:linear-gradient(to bottom, #000000, #ffffff);
+}
+#titulo { /* Vamos utilizar esta linea para que nuestro titulo del juego permanezca en pantalla */
+  position: fixed; /*Elemento que se queda fijo en la pantalla*/
+  top: 20px; /*Posicionamos 20 arriba y 50 izquierda */
+  left: 80px;
+  color: linear-gradient(to bottom,     #0fb86e, #ffffff); /*Le decimos que el texto es blanco*/
+  text-shadow: 0 0 5px #00ddff, 0 0 10px #ff00ff;
+}
+
+
+#decoracion {
+  position: fixed;
+  top: 30px;
+  left: 900px;
+  color: white;
+  font-family: monospace; /* Tipo de fuente, con tamaño pequeño, ideal para decoraciones tipo ASCII o figuras simples */ 
+  text-shadow: 0 0 5px #681010, 0 0 10px #ffee00;
+}
+.contenedor-juego { /*Lo utilizamos para mantener el control sobre el canvas y otros elementos internos */ 
+  position: absolute; /*Posicionamos elementos absolutamente dentro de este contenedor*/ 
+}
+
+/* Estilo del canvas de Phaser */
+canvas {
+  box-shadow: 0 0 25px #000000;
+  border-radius: 10px;
+  border: 2px solid #000000;
+  background-color: #111;
+  display: block;
+  margin: 0 auto;
+}
